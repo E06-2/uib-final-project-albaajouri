@@ -12,6 +12,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgba(119, 119, 119, 1);
+  background-color: black;
 }
 nav {
   margin: 0;
@@ -377,4 +378,65 @@ nav {
 .section:target {
   opacity: 1;
   transition: all 1s;
+}
+
+@media only screen and(max-width:600px) and (min-width: 1px) {
+  /*section start*/
+  .section {
+    h1 {
+      font-size: 3.5rem;
+      right: 3%;
+    }
+  }
+  /*section end*/
+  /*nav start*/
+  nav {
+    ul {
+      justify-content: unset;
+      li {
+        width: 25%;
+        a {
+          font-size: 1rem;
+        }
+      }
+    }
+    .info {
+      h1,
+      h3 {
+        color: #ffffff;
+      }
+      .container {
+        justify-content: space-evenly;
+        width: 100%;
+        .card {
+          .box {
+            p {
+              font-size: 1em;
+            }
+            h2 {
+              right: 5%;
+              font-size: 1.2em;
+              bottom: 5%;
+            }
+          }
+        }
+      }
+    }
+    .Screen-size {
+      .screen {
+        .screen-body {
+          margin-top: 23vh;
+          justify-content: space-between;
+          .screen-body-item {
+            margin-top: 0;
+            .app-contact {
+              display: flex;
+              flex-direction: column;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*nav end*/
 }
