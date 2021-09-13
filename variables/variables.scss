@@ -1,0 +1,20 @@
+@mixin resizing($min, $max){
+    @media only screen and(max-width: $max) and (min-width: $min) {
+        @content;
+    }
+}
+@mixin hoverEffect($color, $time) {
+    &:hover
+    {background-color: lightseagreen;
+    transition: all $time;
+    &:active{
+        background-color: yellow;
+        transition: all $time;
+    }
+    &:focus{
+        background-color: orange;
+        transition: all $time;
+    }
+@content}
+    
+}
